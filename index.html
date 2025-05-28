@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/fd7d4626d6.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome Kit: This script loads the Font Awesome icon library, allowing you to use a wide variety of icons in your project.
+    Icons Availability: Once this script is added, you can easily use icons like: -->
+</head>
+<body>
+    <!-- =================================Header part ======================================== -->
+  <div id="header">
+    <div class = "container">
+        <nav>
+         <h1><span> Kaveri </span>Kasula</h1>
+            <ul id = "sidemenu">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#services">Service</a></li>
+                <li><a href = "#Portfolio">Portfolio</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+           <i class="fas fa-bars" onclick = "openmenu()"></i>
+        </nav>
+
+        <div class = "header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi,I'm <span>Kaveri </span> <br> From Hyderbad</h1>
+
+        </div>
+
+    </div>
+  </div>
+
+  <!-- ================================About part ============================== -->
+<div id="about">
+  <div class="container">
+    <div class = "row">
+        <!-- add two colums one is for img and another about section -->
+         <div class = "about-col-1">
+            <img src = "Images/Background4.avif" alt = ""/>
+         </div>
+           <div class = "about-col-2">
+            <h1 class = "sub-title">About me</h1><br>
+            <p>I am a third-year B.Tech student passionate about web development and Java programming.
+                 With hands-on experience in React, JavaScript, and Java, I've built web apps like a food ordering platform, 
+                 an e-commerce site, and a cyberbullying detection tool. Currently, 
+                 I’m working on a digital project to empower youth with skill development.</p>
+ <!-- =============================skills Titles area section ================= -->
+                   <div class = "tab-titles">
+                               <p class = "tab-links active-link "   onclick="opentab('skills')">Skills</p>
+                              <!-- Here we using Function call in that call passing args(like id name) -->
+                                <p class = "tab-links  " onclick="opentab('education')" >Education</p>
+                                <p class = "tab-links  "  onclick="opentab('experience')">Experience</p>
+
+                       </div>
+
+
+                        
+                        
+                        
+                       <!-- ===========================Skills============================= -->
+                                <div class="tab-contents active-tab " id = "skills">
+                                  <ul>
+                                    <li><span>Java</span><br>Java programming</li>
+                                    <li><span>Frontned development</span><br>Html,Css,Js,React Js</li>
+                                     <li><span>Databases</span><br>Mysql</li>
+                                  </ul>
+                                </div>
+                                <!-- ========================Projects=========================== -->
+
+                                 <div class="tab-contents  " id = "education">
+                                  <ul>
+                                    <li><span>B-Tech in AI & ML/Year</span><br>Malla Reddy Engineering College <span>2022-2026</span><br> CGPA  :<span>8.0 Points</span></li>
+                                    <li><span>Intermediate/Year</span><br>Narayana jr College <span>2020-2022</span><br>Percentage :<span>96%</span></li>
+                                     <li><span>SchooL/Year</span><br>Mjp School  <span>2014-2020</span><br>Percentage :  <span>100%</span></li>
+                                  </ul>
+                                </div>
+                              <!-- ============================Education========================= -->
+                               <div class="tab-contents  " id = "experience">
+                                  <ul>
+                                    <li><span>Web development Intern</span><br>Duration  : <span>Nov - Dec 2024 </span></li>
+                                    <li><span>Projects : </span></li>
+                                    <li><span>Recipe Book : </span><br>Developed a dynamic recipe Catalog with Html,Css,Js.</li>
+                                     <li><span>Link Shortener :</span><br>Built a URL shortening tool with a user-friendly interface.</li>
+                                       <li><span> Food Ordering Website /App (React JS):</span><br>Designed a complete food ordering system with cart management,order processing ,and user authentication.</li>
+                                  </ul>
+                                </div>
+ </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ==========================================================SERVICES SECTION ================================================================ -->
+
+<div id = "services">
+  <div class = "container">
+    <h1 class = "sub-title">My Services</h1>
+    <div class = "services-list">
+
+      <div>
+        <!-- services title and desc -->
+         <i class="fa-solid fa-code"></i>
+         <h2>Web Development</h2>
+         <p>I build responsive websites using React JS, ensuring a smooth user experience across all devices.</p>
+         <a href = #>Learn more</a>
+    </div>
+
+      <div>
+        <!-- services title and desc -->
+         <i class="fa-solid fa-database"></i>
+         <h2> Database Management</h2>
+         <p> MySQL database design and management,I design, create, and manage efficient relational databases for scalable applications.</p>
+         <a href = #>Learn more</a>
+    </div>
+            <div>
+        <!-- services title and desc -->
+        
+             <i class="fa-solid fa-laptop-code"></i>
+         <h2>Machine Learning</h2>
+         <p> Developing ML models like Cyberbullying Detection . I develop ML models to detect harmful text on social media, promoting safer interactions.</p>
+         <a href = #>Learn more</a>
+    </div>
+
+
+</div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =====================Portfolio=========================== -->
+ <div id = "Portfolio">
+
+<div class = "container">
+   <h1 class = "sub-title">My Work</h1>
+   <div class = "work-list">
+    <div class = "work">
+        <img src = "Images/foodorder2.png"  height = "200px">
+        <div class = "layer">
+          <h3>Food Ordering Website</h3>
+          <P>Enables users to browse menus, add items to a cart, and place orders seamlessly with a responsive and user-friendly interface.</P>
+ <a href = #><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+    </div>
+
+    <div class = "work">
+        <img src = "Images/Recipe.avif"  height = "200px">
+         <div class = "layer">
+          <h3>Recipe App</h3>
+          <P>Allows users to search, browse, and view detailed recipes with ingredients and cooking steps in a responsive design.</P>
+ <a href = #><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+    </div>
+
+    <div class = "work">
+        <img src = "Images/homemade-pizza-monterey-jack-cheese.jpg" >
+         <div class = "layer">
+          <h3>Pizza App</h3>
+          <P>Manages pizza orders by allowing users to add, update, and calculate bills.</P>
+ <a href = #><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+    </div>
+
+
+
+   </div>
+   <a href = "#" class = "btn">See More</a>
+
+</div>
+ </div>
+
+<!-- ========================contact section========================== -->
+ <div id ="contact">
+<div class ="container">
+ <div class ="row">
+      <div class ="contact-left">
+            <h1 class = "sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>    Kaveri6303@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>    9000622410</p>
+    <div class = "social-icons">
+            <a  href = "https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a  href = "https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a  href = "https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+            <a  href = "https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+
+      </div>
+      <a href = "Images/KAVERI's Resume.pdf" class = "btn btn2">Download CV</a>
+      <!-- in class we take btn but take another btn2 -->
+    </div>
+            <div class ="contact-right">
+
+            <form name = "submit-to-google-sheet">
+              <input type = "text" name = "Name" placeholder="Your Name" required >
+              <input type = "email" name = "email" placeholder="Your Email" required >
+            <textarea name = "Message" rows = "6" placeholder="Your Message"></textarea>
+             <button type = "submit" class = "btn btn2">Submit</button>
+
+
+            </form>
+             <span id = "msg"></span> 
+
+            </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <p>Copyright © kevin .Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+</div>
+ </div>
+
+
+
+
+
+
+<!-- ====================================Script part ============================= -->
+
+                        <script>
+                                var tablinks = document.getElementsByClassName("tab-links");
+                                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                                function opentab(tabname){
+
+                               for(tablink of tablinks){
+                                tablink.classList.remove("active-link");
+                               }
+
+                                 for(tabcontent of tabcontents){
+                                  tabcontent.classList.remove("active-tab");
+                                 }
+                                   event.currentTarget.classList.add("active-link");
+                                  //  whatever i click it should be active
+                                  document.getElementById(tabname).classList.add("active-tab");
+
+                                }
+ </script> 
+
+ <script>
+  var sidemenu =  document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+ </script>
+
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz4ExYCuDqlzJbru-6wjxPOnBFv89P2eAwuZWSk3npM9KDen9_tk9CPXs0HfNktCn1r/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+                   msg.innerHTML = "Message sent successfully"
+                   setTimeout(function (){
+                    msg.innerHTML = ""
+                   },5000)
+                   form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+</body>
+</html>
